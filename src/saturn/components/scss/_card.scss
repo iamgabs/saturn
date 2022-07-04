@@ -1,0 +1,27 @@
+@use 'sass:math';
+
+.card {
+    display: block;
+    padding: $base-padding;
+    border: 1px solid map-get($colors, "silver");
+    border-radius: math.div($base-border-radius, 3);
+    box-shadow: $base-box-shadow;
+    margin: base-margin;
+    max-width: 400px;
+
+    .card-title {
+        font-size:  $base-font-size;
+        font-weight: bold;
+    }
+
+    .card-body {
+        font-size: $base-font-size;
+
+        a {
+            color: map-get($colors, "light-blue");
+            text-decoration: none;
+        }
+
+    }
+}
+

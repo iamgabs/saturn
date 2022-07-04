@@ -1,0 +1,45 @@
+@each $key, $value in $colors {
+    .text-#{$key} {
+        color: $value;
+    }
+
+    .text-hover-#{$key} {
+        &:hover { 
+            color: $value;
+        }
+    }
+
+    .text-focus-#{$key} {
+        &:focus { 
+            color: $value;
+        }
+    }
+
+    .text-selection-#{$key} {
+        &::selection { 
+            color: $value;
+        }
+    }
+
+    .bg-#{$key} {
+        background-color: $value;
+    }
+
+    .bg-hover-#{$key} {
+        &:hover { 
+            background-color: $value;
+        }
+    }
+
+    .bg-focus-#{$key} {
+        &:focus { 
+            background-color: $value;
+        }
+    }
+
+    .bg-selection-#{$key} {
+        &::selection { 
+            background-color: $value;
+        }
+    }
+}

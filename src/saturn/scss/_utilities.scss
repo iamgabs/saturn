@@ -1,0 +1,164 @@
+@use 'sass:math';
+
+$utilities: (
+    "padding": (
+        "prefix": "p",
+        "values": (
+            "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 4,
+            "4": $base-padding * 6,
+            "5": $base-padding * 8,
+            "6": $base-padding * 10
+        )
+    ),
+    "padding-top": (
+        "prefix": "pt",
+        "values": (
+            "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 4,
+            "4": $base-padding * 6,
+            "5": $base-padding * 8,
+            "6": $base-padding * 10
+        )
+    ),
+    "padding-right": (
+        "prefix": "pr",
+        "values": (
+            "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 4,
+            "4": $base-padding * 6,
+            "5": $base-padding * 8,
+            "6": $base-padding * 10
+        )
+    ),
+    "padding-bottom": (
+        "prefix": "pb",
+        "values": (
+            "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 4,
+            "4": $base-padding * 6,
+            "5": $base-padding * 8,
+            "6": $base-padding * 10
+        )
+    ),
+    "padding-left": (
+        "prefix": "pl",
+        "values": (
+            "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 4,
+            "4": $base-padding * 6,
+            "5": $base-padding * 8,
+            "6": $base-padding * 10
+        )
+    ),
+    "margin": (
+        "prefix": "m",
+        "values": (
+            "0": 0,
+            "1": $base-margin,
+            "2": $base-margin * 2,
+            "3": $base-margin * 4,
+            "4": $base-margin * 6,
+            "5": $base-margin * 8,
+            "6": $base-margin * 10
+        )
+    ),
+    "margin-top": (
+        "prefix": "mt",
+        "values": (
+            "0": 0,
+            "1": $base-margin,
+            "2": $base-margin * 2,
+            "3": $base-margin * 4,
+            "4": $base-margin * 6,
+            "5": $base-margin * 8,
+            "6": $base-margin * 10
+        )
+    ),
+    "margin-right": (
+        "prefix": "mr",
+        "values": (
+            "0": 0,
+            "1": $base-margin,
+            "2": $base-margin * 2,
+            "3": $base-margin * 4,
+            "4": $base-margin * 6,
+            "5": $base-margin * 8,
+            "6": $base-margin * 10
+        )
+    ),
+    "margin-bottom": (
+        "prefix": "mb",
+        "values": (
+            "0": 0,
+            "1": $base-margin,
+            "2": $base-margin * 2,
+            "3": $base-margin * 4,
+            "4": $base-margin * 6,
+            "5": $base-margin * 8,
+            "6": $base-margin * 10
+        )
+    ),
+    "margin-left": (
+        "prefix": "ml",
+        "values": (
+            "0": 0,
+            "1": $base-margin,
+            "2": $base-margin * 2,
+            "3": $base-margin * 4,
+            "4": $base-margin * 6,
+            "5": $base-margin * 8,
+            "6": $base-margin * 10
+        )
+    ),
+    "font-size": (
+        "prefix": "font-size",
+        "values": (
+            "xsm": $font-xsm,
+            "sm": $font-sm,
+            "mid": $font-mid,
+            "lg": $font-lg,
+            "xlg": $font-xlg,
+            "xxlg": $font-xxlg
+        )
+    ),
+    "display": (
+        "prefix": "display",
+        "values": (
+            "n": none,
+            "b": block,
+            "f": flex,
+            "i": inline,
+            "ib": inline-block,
+            "grid": grid
+        )
+    )
+);
+
+// generate classes 
+@each $property, $map in $utilities {
+    $prefix: map-get($map , "prefix");
+    $values: map-get($map , "values");
+
+    @each $key, $value in $values {
+        @if($key == "default") {
+            .#{$prefix} {
+                #{$property}: $value;
+            }
+        } @else {
+            .#{$prefix}-#{$key} {
+                #{$property}: $value;
+            }
+        }
+    }
+}
