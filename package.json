@@ -15,11 +15,13 @@
   "license": "MIT",
   "dependencies": {
     "gulp": "^4.0.2",
-    "gulp-cli": "^2.3.0",
-    "gulp-sass": "^5.1.0",
-    "sass": "^1.53.0"
+    "gulp-cli": "^2.3.0"
   },
   "overrides": {
     "graceful-fs": "^4.2.9"
+  },
+  "devDependencies": {
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.55.0"
   }
 }

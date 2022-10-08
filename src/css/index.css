@@ -10,29 +10,31 @@ body {
 }
 
 h1 {
-  font-size: 2.0064rem;
-  color: #3763f5;
+  font-size: 2em;
 }
 
-.card {
-  display: block;
-  padding: 0.75rem;
-  border: 1px solid #c0c0c0;
-  border-radius: 6.6666666667px;
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1019607843);
-  margin: base-margin;
-  max-width: 400px;
+h2 {
+  font-size: 1.5em;
 }
-.card .card-title {
-  font-size: 1rem;
-  font-weight: bold;
+
+h3 {
+  font-size: 1.17em;
 }
-.card .card-body {
-  font-size: 1rem;
+
+h4 {
+  font-size: 1em;
 }
-.card .card-body a {
-  color: #3763f5;
-  text-decoration: none;
+
+h5 {
+  font-size: 0.83em;
+}
+
+h6 {
+  font-size: 0.67em;
+}
+
+p {
+  font-size: 1em;
 }
 
 .text-black {
@@ -1193,4 +1195,688 @@ h1 {
 
 .display-grid {
   display: grid;
+}
+
+.wd-xxsm {
+  width: 1rem;
+}
+
+.wd-xsm {
+  width: 3rem;
+}
+
+.wd-sm {
+  width: 5rem;
+}
+
+.wd-mid {
+  width: 8rem;
+}
+
+.wd-lg {
+  width: 11rem;
+}
+
+.wd-xlg {
+  width: 13rem;
+}
+
+.wd-xxlg {
+  width: 15rem;
+}
+
+.wd-0 {
+  width: 0;
+}
+
+.wd-1 {
+  width: 1rem;
+}
+
+.wd-2 {
+  width: 2rem;
+}
+
+.wd-3 {
+  width: 3rem;
+}
+
+.wd-4 {
+  width: 4rem;
+}
+
+.wd-5 {
+  width: 5rem;
+}
+
+.wd-6 {
+  width: 6rem;
+}
+
+.wd-7 {
+  width: 7rem;
+}
+
+.wd-8 {
+  width: 8rem;
+}
+
+.wd-9 {
+  width: 9rem;
+}
+
+.wd-10 {
+  width: 10rem;
+}
+
+.wd-11 {
+  width: 11rem;
+}
+
+.wd-12 {
+  width: 12rem;
+}
+
+.wd-13 {
+  width: 13rem;
+}
+
+.wd-14 {
+  width: 14rem;
+}
+
+.wd-15 {
+  width: 15rem;
+}
+
+.wd-16 {
+  width: 16rem;
+}
+
+.wd-17 {
+  width: 17rem;
+}
+
+.wd-18 {
+  width: 18rem;
+}
+
+.wd-19 {
+  width: 19rem;
+}
+
+.wd-20 {
+  width: 20rem;
+}
+
+.wd-21 {
+  width: 21rem;
+}
+
+.wd-22 {
+  width: 22rem;
+}
+
+.wd-23 {
+  width: 23rem;
+}
+
+.wd-24 {
+  width: 24rem;
+}
+
+.wd-25 {
+  width: 25rem;
+}
+
+.wd-26 {
+  width: 26rem;
+}
+
+.wd-27 {
+  width: 27rem;
+}
+
+.wd-28 {
+  width: 28rem;
+}
+
+.wd-29 {
+  width: 29rem;
+}
+
+.wd-30 {
+  width: 30rem;
+}
+
+.wd-31 {
+  width: 31rem;
+}
+
+.wd-32 {
+  width: 32rem;
+}
+
+.wd-33 {
+  width: 33rem;
+}
+
+.wd-34 {
+  width: 34rem;
+}
+
+.wd-35 {
+  width: 35rem;
+}
+
+.wd-36 {
+  width: 36rem;
+}
+
+.wd-37 {
+  width: 37rem;
+}
+
+.wd-38 {
+  width: 38rem;
+}
+
+.wd-39 {
+  width: 39rem;
+}
+
+.wd-40 {
+  width: 40rem;
+}
+
+.wd-41 {
+  width: 41rem;
+}
+
+.wd-42 {
+  width: 42rem;
+}
+
+.wd-43 {
+  width: 43rem;
+}
+
+.wd-44 {
+  width: 44rem;
+}
+
+.wd-45 {
+  width: 45rem;
+}
+
+.wd-46 {
+  width: 46rem;
+}
+
+.wd-47 {
+  width: 47rem;
+}
+
+.wd-48 {
+  width: 48rem;
+}
+
+.wd-49 {
+  width: 49rem;
+}
+
+.wd-50 {
+  width: 50rem;
+}
+
+.wd-51 {
+  width: 51rem;
+}
+
+.wd-52 {
+  width: 52rem;
+}
+
+.wd-53 {
+  width: 53rem;
+}
+
+.wd-54 {
+  width: 54rem;
+}
+
+.wd-55 {
+  width: 55rem;
+}
+
+.wd-56 {
+  width: 56rem;
+}
+
+.wd-57 {
+  width: 57rem;
+}
+
+.wd-58 {
+  width: 58rem;
+}
+
+.wd-59 {
+  width: 59rem;
+}
+
+.wd-60 {
+  width: 50rem;
+}
+
+.wd-61 {
+  width: 61rem;
+}
+
+.wd-62 {
+  width: 62rem;
+}
+
+.wd-63 {
+  width: 63rem;
+}
+
+.wd-64 {
+  width: 64rem;
+}
+
+.wd-65 {
+  width: 65rem;
+}
+
+.wd-66 {
+  width: 66rem;
+}
+
+.wd-67 {
+  width: 67rem;
+}
+
+.wd-68 {
+  width: 68rem;
+}
+
+.wd-69 {
+  width: 69rem;
+}
+
+.wd-70 {
+  width: 70rem;
+}
+
+.wd-80 {
+  width: 80rem;
+}
+
+.wd-90 {
+  width: 90rem;
+}
+
+.wd-100 {
+  width: 100rem;
+}
+
+.hg-xxsm {
+  height: 1rem;
+}
+
+.hg-xsm {
+  height: 3rem;
+}
+
+.hg-sm {
+  height: 5rem;
+}
+
+.hg-mid {
+  height: 8rem;
+}
+
+.hg-lg {
+  height: 11rem;
+}
+
+.hg-xlg {
+  height: 13rem;
+}
+
+.hg-xxlg {
+  height: 15rem;
+}
+
+.hg-0 {
+  height: 0;
+}
+
+.hg-1 {
+  height: 1rem;
+}
+
+.hg-2 {
+  height: 2rem;
+}
+
+.hg-3 {
+  height: 3rem;
+}
+
+.hg-4 {
+  height: 4rem;
+}
+
+.hg-5 {
+  height: 5rem;
+}
+
+.hg-6 {
+  height: 6rem;
+}
+
+.hg-7 {
+  height: 7rem;
+}
+
+.hg-8 {
+  height: 8rem;
+}
+
+.hg-9 {
+  height: 9rem;
+}
+
+.hg-10 {
+  height: 10rem;
+}
+
+.hg-11 {
+  height: 11rem;
+}
+
+.hg-12 {
+  height: 12rem;
+}
+
+.hg-13 {
+  height: 13rem;
+}
+
+.hg-14 {
+  height: 14rem;
+}
+
+.hg-15 {
+  height: 15rem;
+}
+
+.hg-16 {
+  height: 16rem;
+}
+
+.hg-17 {
+  height: 17rem;
+}
+
+.hg-18 {
+  height: 18rem;
+}
+
+.hg-19 {
+  height: 19rem;
+}
+
+.hg-20 {
+  height: 20rem;
+}
+
+.hg-21 {
+  height: 21rem;
+}
+
+.hg-22 {
+  height: 22rem;
+}
+
+.hg-23 {
+  height: 23rem;
+}
+
+.hg-24 {
+  height: 24rem;
+}
+
+.hg-25 {
+  height: 25rem;
+}
+
+.hg-26 {
+  height: 26rem;
+}
+
+.hg-27 {
+  height: 27rem;
+}
+
+.hg-28 {
+  height: 28rem;
+}
+
+.hg-29 {
+  height: 29rem;
+}
+
+.hg-30 {
+  height: 30rem;
+}
+
+.hg-31 {
+  height: 31rem;
+}
+
+.hg-32 {
+  height: 32rem;
+}
+
+.hg-33 {
+  height: 33rem;
+}
+
+.hg-34 {
+  height: 34rem;
+}
+
+.hg-35 {
+  height: 35rem;
+}
+
+.hg-36 {
+  height: 36rem;
+}
+
+.hg-37 {
+  height: 37rem;
+}
+
+.hg-38 {
+  height: 38rem;
+}
+
+.hg-39 {
+  height: 39rem;
+}
+
+.hg-40 {
+  height: 40rem;
+}
+
+.hg-41 {
+  height: 41rem;
+}
+
+.hg-42 {
+  height: 42rem;
+}
+
+.hg-43 {
+  height: 43rem;
+}
+
+.hg-44 {
+  height: 44rem;
+}
+
+.hg-45 {
+  height: 45rem;
+}
+
+.hg-46 {
+  height: 46rem;
+}
+
+.hg-47 {
+  height: 47rem;
+}
+
+.hg-48 {
+  height: 48rem;
+}
+
+.hg-49 {
+  height: 49rem;
+}
+
+.hg-50 {
+  height: 50rem;
+}
+
+.hg-51 {
+  height: 51rem;
+}
+
+.hg-52 {
+  height: 52rem;
+}
+
+.hg-53 {
+  height: 53rem;
+}
+
+.hg-54 {
+  height: 54rem;
+}
+
+.hg-55 {
+  height: 55rem;
+}
+
+.hg-56 {
+  height: 56rem;
+}
+
+.hg-57 {
+  height: 57rem;
+}
+
+.hg-58 {
+  height: 58rem;
+}
+
+.hg-59 {
+  height: 59rem;
+}
+
+.hg-60 {
+  height: 50rem;
+}
+
+.hg-61 {
+  height: 61rem;
+}
+
+.hg-62 {
+  height: 62rem;
+}
+
+.hg-63 {
+  height: 63rem;
+}
+
+.hg-64 {
+  height: 64rem;
+}
+
+.hg-65 {
+  height: 65rem;
+}
+
+.hg-66 {
+  height: 66rem;
+}
+
+.hg-67 {
+  height: 67rem;
+}
+
+.hg-68 {
+  height: 68rem;
+}
+
+.hg-69 {
+  height: 69rem;
+}
+
+.hg-70 {
+  height: 70rem;
+}
+
+.hg-80 {
+  height: 80rem;
+}
+
+.hg-90 {
+  height: 90rem;
+}
+
+.hg-100 {
+  height: 100rem;
+}
+
+.card {
+  display: block;
+  padding: 0.75rem;
+  border: 1px solid #c0c0c0;
+  border-radius: 6.6666666667px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1019607843);
+  margin: base-margin;
+  max-width: 400px;
+}
+.card .card-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.card .card-body {
+  font-size: 1em;
+}
+.card .card-body a {
+  color: #3763f5;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 0.2rem 6rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #c0c0c0;
+  cursor: pointer;
+}
+
+.row {
+  display: block;
+  width: 100%;
+  height: auto;
 }

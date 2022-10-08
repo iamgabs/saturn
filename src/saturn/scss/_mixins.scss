@@ -1,0 +1,11 @@
+@use 'sass:math';
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-align {
+    @include flex-center;
+    align-items: center;
+}

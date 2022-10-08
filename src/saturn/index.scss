@@ -4,11 +4,17 @@
 // import base scss
 @import 'scss/base';
 
-// import components 
-@import 'components/scss/card';
-
 // import colors components 
 @import 'scss/colors';
 
 // import utilities 
 @import 'scss/utilities';
+
+// import components 
+@import 'components/scss/card';
+@import 'components/scss/button';
+@import 'components/scss/form';
+@import 'components/scss/links';
+@import 'components/scss/navbar';
+@import 'components/scss/row';
+@import 'components/scss/table';

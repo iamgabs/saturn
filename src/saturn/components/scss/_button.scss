@@ -1,0 +1,10 @@
+@use 'sass:math';
+
+.btn {
+    padding: .2rem 6rem;
+    font-size: $font-mid;
+    border: none;
+    border-radius: 8px;
+    background-color: map-get($colors, "silver");
+    cursor: pointer;
+}
