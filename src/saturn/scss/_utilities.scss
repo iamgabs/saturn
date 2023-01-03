@@ -1,126 +1,6 @@
 @use 'sass:math';
 
 $utilities: (
-    "padding": (
-        "prefix": "p",
-        "values": (
-            "0": 0,
-            "1": $base-padding,
-            "2": $base-padding * 2,
-            "3": $base-padding * 4,
-            "4": $base-padding * 6,
-            "5": $base-padding * 8,
-            "6": $base-padding * 10
-        )
-    ),
-    "padding-top": (
-        "prefix": "pt",
-        "values": (
-            "0": 0,
-            "1": $base-padding,
-            "2": $base-padding * 2,
-            "3": $base-padding * 4,
-            "4": $base-padding * 6,
-            "5": $base-padding * 8,
-            "6": $base-padding * 10
-        )
-    ),
-    "padding-right": (
-        "prefix": "pr",
-        "values": (
-            "0": 0,
-            "1": $base-padding,
-            "2": $base-padding * 2,
-            "3": $base-padding * 4,
-            "4": $base-padding * 6,
-            "5": $base-padding * 8,
-            "6": $base-padding * 10
-        )
-    ),
-    "padding-bottom": (
-        "prefix": "pb",
-        "values": (
-            "0": 0,
-            "1": $base-padding,
-            "2": $base-padding * 2,
-            "3": $base-padding * 4,
-            "4": $base-padding * 6,
-            "5": $base-padding * 8,
-            "6": $base-padding * 10
-        )
-    ),
-    "padding-left": (
-        "prefix": "pl",
-        "values": (
-            "0": 0,
-            "1": $base-padding,
-            "2": $base-padding * 2,
-            "3": $base-padding * 4,
-            "4": $base-padding * 6,
-            "5": $base-padding * 8,
-            "6": $base-padding * 10
-        )
-    ),
-    "margin": (
-        "prefix": "m",
-        "values": (
-            "0": 0,
-            "1": $base-margin,
-            "2": $base-margin * 2,
-            "3": $base-margin * 4,
-            "4": $base-margin * 6,
-            "5": $base-margin * 8,
-            "6": $base-margin * 10
-        )
-    ),
-    "margin-top": (
-        "prefix": "mt",
-        "values": (
-            "0": 0,
-            "1": $base-margin,
-            "2": $base-margin * 2,
-            "3": $base-margin * 4,
-            "4": $base-margin * 6,
-            "5": $base-margin * 8,
-            "6": $base-margin * 10
-        )
-    ),
-    "margin-right": (
-        "prefix": "mr",
-        "values": (
-            "0": 0,
-            "1": $base-margin,
-            "2": $base-margin * 2,
-            "3": $base-margin * 4,
-            "4": $base-margin * 6,
-            "5": $base-margin * 8,
-            "6": $base-margin * 10
-        )
-    ),
-    "margin-bottom": (
-        "prefix": "mb",
-        "values": (
-            "0": 0,
-            "1": $base-margin,
-            "2": $base-margin * 2,
-            "3": $base-margin * 4,
-            "4": $base-margin * 6,
-            "5": $base-margin * 8,
-            "6": $base-margin * 10
-        )
-    ),
-    "margin-left": (
-        "prefix": "ml",
-        "values": (
-            "0": 0,
-            "1": $base-margin,
-            "2": $base-margin * 2,
-            "3": $base-margin * 4,
-            "4": $base-margin * 6,
-            "5": $base-margin * 8,
-            "6": $base-margin * 10
-        )
-    ),
     "font-size": (
         "prefix": "font-size",
         "values": (
@@ -133,18 +13,24 @@ $utilities: (
         )
     ),
     "display": (
-        "prefix": "display",
+        "prefix": "dsp",
         "values": (
             "n": none,
+            "none": none,
             "b": block,
+            "block": block,
             "f": flex,
+            "flex": flex,
             "i": inline,
+            "inline": inline,
             "ib": inline-block,
+            "inline-block": inline-block,
+            "g": grid,
             "grid": grid
         )
     ),
     "width": (
-        "prefix": "wd", 
+        "prefix": "width", 
         "values": (
             "xxsm": $size-xxsm,
             "xsm": $size-xsm,
@@ -152,85 +38,11 @@ $utilities: (
             "mid": $size-mid,
             "lg": $size-lg,
             "xlg": $size-xlg,
-            "xxlg": $size-xxlg,
-            "0": 0,
-            "1": 1rem,
-            "2": 2rem,
-            "3": 3rem,
-            "4": 4rem,
-            "5": 5rem,
-            "6": 6rem,
-            "7": 7rem,
-            "8": 8rem,
-            "9": 9rem,
-            "10": 10rem,
-            "11": 11rem,
-            "12": 12rem,
-            "13": 13rem,
-            "14": 14rem,
-            "15": 15rem,
-            "16": 16rem,
-            "17": 17rem,
-            "18": 18rem,
-            "19": 19rem,
-            "20": 20rem,
-            "21": 21rem,
-            "22": 22rem,
-            "23": 23rem,
-            "24": 24rem,
-            "25": 25rem,
-            "26": 26rem,
-            "27": 27rem,
-            "28": 28rem,
-            "29": 29rem,
-            "30": 30rem,
-            "31": 31rem,
-            "32": 32rem,
-            "33": 33rem,
-            "34": 34rem,
-            "35": 35rem,
-            "36": 36rem,
-            "37": 37rem,
-            "38": 38rem,
-            "39": 39rem,
-            "40": 40rem,
-            "41": 41rem,
-            "42": 42rem,
-            "43": 43rem,
-            "44": 44rem,
-            "45": 45rem,
-            "46": 46rem,
-            "47": 47rem,
-            "48": 48rem,
-            "49": 49rem,
-            "50": 50rem,
-            "51": 51rem,
-            "52": 52rem,
-            "53": 53rem,
-            "54": 54rem,
-            "55": 55rem,
-            "56": 56rem,
-            "57": 57rem,
-            "58": 58rem,
-            "59": 59rem,
-            "60": 50rem,
-            "61": 61rem,
-            "62": 62rem,
-            "63": 63rem,
-            "64": 64rem,
-            "65": 65rem,
-            "66": 66rem,
-            "67": 67rem,
-            "68": 68rem,
-            "69": 69rem,
-            "70": 70rem,
-            "80": 80rem,
-            "90": 90rem,
-            "100": 100rem
+            "xxlg": $size-xxlg
         )
     ),
     "height": (
-        "prefix": "hg",
+        "prefix": "height",
         "values": (
             "xxsm": $size-xxsm,
             "xsm": $size-xsm,
@@ -238,81 +50,7 @@ $utilities: (
             "mid": $size-mid,
             "lg": $size-lg,
             "xlg": $size-xlg,
-            "xxlg": $size-xxlg,
-            "0": 0,
-            "1": 1rem,
-            "2": 2rem,
-            "3": 3rem,
-            "4": 4rem,
-            "5": 5rem,
-            "6": 6rem,
-            "7": 7rem,
-            "8": 8rem,
-            "9": 9rem,
-            "10": 10rem,
-            "11": 11rem,
-            "12": 12rem,
-            "13": 13rem,
-            "14": 14rem,
-            "15": 15rem,
-            "16": 16rem,
-            "17": 17rem,
-            "18": 18rem,
-            "19": 19rem,
-            "20": 20rem,
-            "21": 21rem,
-            "22": 22rem,
-            "23": 23rem,
-            "24": 24rem,
-            "25": 25rem,
-            "26": 26rem,
-            "27": 27rem,
-            "28": 28rem,
-            "29": 29rem,
-            "30": 30rem,
-            "31": 31rem,
-            "32": 32rem,
-            "33": 33rem,
-            "34": 34rem,
-            "35": 35rem,
-            "36": 36rem,
-            "37": 37rem,
-            "38": 38rem,
-            "39": 39rem,
-            "40": 40rem,
-            "41": 41rem,
-            "42": 42rem,
-            "43": 43rem,
-            "44": 44rem,
-            "45": 45rem,
-            "46": 46rem,
-            "47": 47rem,
-            "48": 48rem,
-            "49": 49rem,
-            "50": 50rem,
-            "51": 51rem,
-            "52": 52rem,
-            "53": 53rem,
-            "54": 54rem,
-            "55": 55rem,
-            "56": 56rem,
-            "57": 57rem,
-            "58": 58rem,
-            "59": 59rem,
-            "60": 50rem,
-            "61": 61rem,
-            "62": 62rem,
-            "63": 63rem,
-            "64": 64rem,
-            "65": 65rem,
-            "66": 66rem,
-            "67": 67rem,
-            "68": 68rem,
-            "69": 69rem,
-            "70": 70rem,
-            "80": 80rem,
-            "90": 90rem,
-            "100": 100rem
+            "xxlg": $size-xxlg
         )
     )
 );

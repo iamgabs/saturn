@@ -1,0 +1,10 @@
+@use 'sass:math';
+
+.link, a {
+    text-decoration: none;
+    color: map-get($colors, "light-blue");
+
+    &:hover {
+        border-bottom: 1px solid map-get($colors, "light-blue");
+    }
+}

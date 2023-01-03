@@ -1,6 +1,6 @@
 @use 'sass:math';
 
-@mixin flex-center {
+@mixin flex-center{
     display: flex;
     justify-content: center;
 }
@@ -8,4 +8,19 @@
 @mixin flex-align {
     @include flex-center;
     align-items: center;
+}
+
+@mixin flex-header {
+    @include flex-align;
+    justify-content: space-around;
+}
+
+@mixin flex-row {
+    @include flex-align;
+    flex-direction: row;
+}
+
+@mixin flex-column {
+    @include flex-align;
+    flex-direction: column;
 }

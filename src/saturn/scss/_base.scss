@@ -38,3 +38,16 @@ h6{
 p{
     font-size: $base-font-size;
 }
+
+.flex-center, .f-center {
+    @include flex-center;
+    color: aquamarine;
+}
+
+.flex-align {
+    @include flex-align;
+}
+
+.flex-row {
+    @include flex-row;
+}

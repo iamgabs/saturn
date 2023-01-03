@@ -1,14 +1,21 @@
 // import variables
 @import 'scss/variables';
 
-// import base scss
-@import 'scss/base';
-
 // import colors components 
 @import 'scss/colors';
 
+// import "size" components 
+@import 'scss/sizes';
+
+// import mixins
+@import 'scss/mixins';
+
 // import utilities 
 @import 'scss/utilities';
+
+// import base scss
+@import 'scss/base';
+
 
 // import components 
 @import 'components/scss/card';
@@ -18,3 +25,4 @@
 @import 'components/scss/navbar';
 @import 'components/scss/row';
 @import 'components/scss/table';
+@import 'components/scss/list';
