@@ -24,6 +24,10 @@
     .bg-#{$key} {
         background-color: $value;
     }
+    
+    .bg-#{$key}-transparency {
+        background-color: $value+bb;
+    }
 
     .bg-hover-#{$key} {
         &:hover { 

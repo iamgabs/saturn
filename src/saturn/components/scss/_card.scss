@@ -7,7 +7,7 @@
     border-radius: math.div($base-border-radius, 3);
     box-shadow: $base-box-shadow;
     margin: base-margin;
-    max-width: 400px;
+    max-width: 500px;
 
     .card-title {
         font-size:  $font-lg;
@@ -16,12 +16,116 @@
 
     .card-body {
         font-size: $base-font-size;
-
-        a {
-            color: map-get($colors, "light-blue");
-            text-decoration: none;
-        }
-
     }
 }
 
+.card-center {
+    @include flex-column;
+    padding: $base-padding;
+    border: 1px solid map-get($colors, "silver");
+    border-radius: math.div($base-border-radius, 3);
+    box-shadow: $base-box-shadow;
+    margin: base-margin;
+    max-width: 500px;
+
+    .card-title {
+        font-size:  $font-lg;
+        font-weight: bold;
+    }
+
+    .card-body {
+        @include flex-column;
+        text-align: center;
+        font-size: $base-font-size;
+    }
+}
+
+.card-neumorphism {
+    display: block;
+    padding: $base-padding;
+    border-radius: math.div($base-border-radius, 3);
+    border-radius: 50px;
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow:  12px 12px 36px #d9d9d9,
+                 -12px -12px 36px rgba(199, 199, 199, 0.3);
+    margin: base-margin;
+    max-width: 500px;
+
+    .card-title {
+        font-size:  $font-lg;
+        font-weight: bold;
+    }
+
+    .card-body {
+        font-size: math.div($base-font-size, 1.1);
+    }
+}
+
+.card-neumorphism-center {
+    @include flex-column;
+    padding: $base-padding;
+    border-radius: math.div($base-border-radius, 3);
+    border-radius: 50px;
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow:  12px 12px 36px #d9d9d9,
+        -12px -12px 36px rgba(199, 199, 199, 0.3);
+    margin: base-margin;
+    max-width: 500px;
+
+    .card-title {
+        font-size:  $font-lg;
+        font-weight: bold;
+    }
+
+    .card-body {
+        @include flex-column;
+        font-size: math.div($base-font-size, 1.1);
+        text-align: center;
+    }
+}
+
+.card-glassmorphism {
+    display: block;
+    padding: $base-padding;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    max-width: 500px;
+    background-color: #ffffff33;
+    
+    .card-title {
+        font-size:  $font-lg;
+        font-weight: bold;
+    }
+
+    .card-body {
+        font-size: $base-font-size;
+    }
+}
+
+.card-glassmorphism-center {
+    @include flex-column;
+    padding: $base-padding;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    max-width: 500px;
+    background-color: #ffffff33;
+    
+    .card-title {
+        font-size:  $font-lg;
+        font-weight: bold;
+    }
+
+    .card-body {
+        @include flex-column;
+        font-size: math.div($base-font-size, 1.1);
+        text-align: center;
+    }
+}

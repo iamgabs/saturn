@@ -6,7 +6,11 @@ const sass = require('gulp-sass')(require('sass'));
 function buildStyles() {;
     return src('src/saturn/**/*.scss')
         .pipe(sass()) // -> compile 
-        .pipe(dest('src/css')); // -> set destination
+        .pipe(dest('src/css')); 
+        //  && 
+        //  src('src/saturn/themes/scss/*.scss')
+        // .pipe(sass()) // -> compile 
+        // .pipe(dest('src/css/themes/'));
 }
 
 function watchRepository() {

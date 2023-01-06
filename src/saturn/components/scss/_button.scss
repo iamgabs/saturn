@@ -4,6 +4,23 @@
     padding: .2rem 6rem;
     font-size: $font-mid;
     border: none;
+    background-color: map-get($colors, "silver");
+    cursor: pointer;
+}
+
+.btn-rectangle {
+    padding: .2rem 6rem;
+    font-size: $font-mid;
+    border: none;
+    border-radius: 8px;
+    background-color: map-get($colors, "silver");
+    cursor: pointer;
+}
+
+.btn-rounded {
+    padding: .2rem 6rem;
+    font-size: $font-mid;
+    border: none;
     border-radius: 8px;
     background-color: map-get($colors, "silver");
     cursor: pointer;
