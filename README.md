@@ -1,4 +1,4 @@
-![SaturnSS LOGO](./src/img/SaturnSS.png)
+![SaturnSS LOGO](./src/img/SaturnSS-noback.png)
 
 ## Description 
 
