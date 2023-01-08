@@ -1,14 +1,10 @@
-@use 'sass:math';
-
 ul, .ul {
     list-style: none;
     width: 100%;
     @include flex-header;
     gap: .5rem;
 
-    &  li, .li {
+    & li, .li {
         padding: .2rem .6rem;
-        background-color: aliceblue;
     }
-    
 }

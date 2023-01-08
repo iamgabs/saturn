@@ -1,7 +1,4 @@
-@use 'sass:math';
-
 .btn {
-    padding: .2rem 6rem;
     font-size: $font-mid;
     border: none;
     background-color: map-get($colors, "silver");
@@ -9,7 +6,13 @@
 }
 
 .btn-rectangle {
-    padding: .2rem 6rem;
+    font-size: $font-mid;
+    border: none;
+    background-color: map-get($colors, "silver");
+    cursor: pointer;
+}
+
+.btn-rounded {
     font-size: $font-mid;
     border: none;
     border-radius: 8px;
@@ -17,11 +20,79 @@
     cursor: pointer;
 }
 
-.btn-rounded {
-    padding: .2rem 6rem;
-    font-size: $font-mid;
-    border: none;
-    border-radius: 8px;
+.btn-2 {
+    margin: 0 5px 10px 0;
     background-color: map-get($colors, "silver");
+    border: 1px solid map-get($colors, "black");
+    border-radius: 4px;
+    box-shadow: map-get($colors, "white") 4px 4px 0 0, map-get($colors, "black") 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: map-get($colors, "black");
+    font-size: $font-mid;
+    text-align: center;
     cursor: pointer;
+}
+
+.btn-2:active {
+    box-shadow: map-get($colors, "black-transparent") 0 5px 7px;
+    outline: 0;
+}
+
+.btn-2:active {
+    box-shadow: map-get($colors, "white") 2px 2px 0 0, map-get($colors, "black") 2px 2px 0 1px;
+    transform: translate(3px, 3px);
+}
+
+.btn-3 {
+  color: map-get($colors, "black");
+  border: none;
+  border-radius: 50px;
+  background-color: map-get($colors, "silver");
+  background-image: radial-gradient(93% 87% at 87% 89%, #0000003b 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, #ffffff69 0%, #ffffff00 69.79%, #ffffff00 100%);
+  box-shadow: 2px 19px 31px #00000033;
+  font-size: $font-mid;
+  cursor: pointer;
+}
+
+.btn-4 {
+    color: map-get($colors, "black");
+    border: none;
+    border-radius: 4px;
+    background-color: map-get($colors, "silver");
+    background-image: linear-gradient(
+        -60deg,
+        transparent, transparent 40%,
+        #ffffff44 40%, #ffffff44 60%,
+        transparent 60%, transparent 100%
+    );
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-position-x: 150%;
+    font-size: $font-mid;
+    cursor: pointer;
+}
+
+.btn-4:hover {
+    background-position-x: -150%;
+    transition: background-position-x 1000ms;
+}
+
+@media (min-width: 320px) {
+    .btn, .btn-rectangle, .btn-rounded, .btn-4{
+        padding: 12px 50px;
+    }
+}
+
+
+@media (min-width: 320px) {
+    .btn-2, .btn-3 {
+        padding: 12px 50px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .btn-2, .btn-3 {
+        padding: 12px 50px;
+    }
 }

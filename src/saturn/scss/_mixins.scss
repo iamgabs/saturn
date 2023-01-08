@@ -1,5 +1,3 @@
-@use 'sass:math';
-
 @mixin flex-center{
     display: flex;
     justify-content: center;
@@ -20,7 +18,17 @@
     flex-direction: row;
 }
 
+@mixin flex-row-reverse {
+    @include flex-align;
+    flex-direction: row-reverse;
+}
+
 @mixin flex-column {
     @include flex-align;
     flex-direction: column;
+}
+
+@mixin flex-column-reverse {
+    @include flex-align;
+    flex-direction: column-reverse;
 }

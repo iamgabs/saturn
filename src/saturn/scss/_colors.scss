@@ -25,7 +25,7 @@
         background-color: $value;
     }
     
-    .bg-#{$key}-transparency {
+    .bg-#{$key}-transparent {
         background-color: $value+bb;
     }
 

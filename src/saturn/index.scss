@@ -13,9 +13,12 @@
 // import utilities 
 @import 'scss/utilities';
 
-// import base scss
+// import base scss and properties
 @import 'scss/base';
-
+@import 'scss/properties/flex_properties';
+@import 'scss/properties/grid_properties';
+@import 'scss/properties/align_properties';
+@import 'scss/properties/justifying_properties';
 
 // import components 
 @import 'components/scss/card';

@@ -1,0 +1,55 @@
+.flex-center, .f-center {
+    @include flex-center;
+}
+
+.flex-align {
+    @include flex-align;
+}
+
+.flex-row, .fr {
+    @include flex-row;
+}
+
+.flex-row-reverse, .frr {
+    @include flex-row-reverse;
+}
+
+.flex-column, .fc {
+    @include flex-column
+}
+
+.flex-column-reverse, .fcr {
+    @include flex-column-reverse;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.wrap-inherit {
+    flex-wrap: inherit;
+}
+
+.wrap-initial {
+    flex-wrap: initial;
+}
+
+.wrap-unset {
+    flex-wrap: unset;
+}
+
+.flex-basis-auto {
+    flex-basis: auto;
+}
+
+.flex-basis-content {
+    flex-basis: content;
+}
