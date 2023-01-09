@@ -11,3 +11,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+i {
+    font-size: $font-mid;
+    color: map-get($colors, "light-blue");
+}

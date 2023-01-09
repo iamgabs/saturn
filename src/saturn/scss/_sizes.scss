@@ -7,12 +7,28 @@
         width: $value;
     }
 
+    .mxwd-#{$key} {
+        max-width: $value;
+    }
+
+    .max-width-#{$key} {
+        max-width: $value;
+    }
+
     .hg-#{$key} {
-        width: $value;
+        height: $value;
+    }
+
+    .mxhg-#{$key} {
+        max-height: $value;
     }
 
     .height-#{$key} {
-        width: $value;
+        height: $value;
+    }
+
+    .max-height-#{$key} {
+        max-height: $value;
     }
 
     .m-#{$key} {

@@ -24,7 +24,7 @@ $colors: (
     "violet": #ee82ee,
     "yellow": #ffff00,
     "silver": #c0c0c0,
-    "white": #fff,
+    "white": #ffffff,
     "transparent": #00000000,
 );
 
@@ -40,6 +40,15 @@ $base-font-size: 1em;
 
 $sizes: (
     "0": 0,
+    "01": .1rem,
+    "02": .2rem,
+    "03": .3rem,
+    "04": .4rem,
+    "05": .5rem,
+    "06": .6rem,
+    "07": .7rem,
+    "08": .8rem,
+    "09": .9rem,
     "1": 1rem,
     "2": 2rem,
     "3": 3rem,
@@ -134,3 +143,16 @@ $base-box-shadow: 1px 3px 5px #0000001a;
 
 // border 
 $base-border-radius: 20px;
+
+$seconds_variable: (
+    "01": .1s,
+    "02": .2s,
+    "03": .3s,
+    "04": .4s,
+    "05": .5s,
+    "06": .6s,
+    "07": .7s,
+    "08": .8s,
+    "09": .9s,
+    "1": 1s,
+);

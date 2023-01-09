@@ -4,7 +4,7 @@ ul, .ul {
     @include flex-header;
     gap: .5rem;
 
-    & li, .li {
+    li, .li {
         padding: .2rem .6rem;
     }
 }

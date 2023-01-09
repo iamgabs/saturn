@@ -1,0 +1,13 @@
+@each $key, $value in $seconds_variable {
+    .transition-#{$key}-ease{
+        transition: $value ease;
+    }
+
+    .transition-#{$key}-ease-in{
+        transition: $value ease-in;
+    }
+
+    .transition-#{$key}-ease-in-out{
+        transition: $value ease-in-out;
+    }
+}

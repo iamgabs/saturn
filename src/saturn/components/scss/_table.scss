@@ -1,0 +1,51 @@
+.table {
+    border: 1px solid map-get($colors, "black");
+    text-align: center;
+    
+    th {
+        background-color: map-get($colors, "soft-black");
+        color: map-get($colors, "light-blue");
+    }
+
+    th, td {
+        padding: 15px;
+        border: 1px solid map-get($colors, "black");
+    }
+
+    tr:nth-child(even) {
+        background-color: map-get($colors, "light-blue");
+    }
+
+    td {
+        color: map-get($colors, "black");
+        font-size: $font-mid;
+    }
+}
+
+.table-2 {
+    text-align: center;
+    border-collapse: collapse;
+    
+    th {
+        background-color: map-get($colors, "soft-black");
+        color: map-get($colors, "light-blue");
+    }
+
+    th, td {
+        padding: 15px;
+        border-bottom: 1px solid  map-get($colors, "light-blue");
+    }
+
+    td {
+        color: map-get($colors, "black");
+        font-size: $font-mid;
+    }
+}
+
+@each $key, $value in $colors {
+    .table-even-color-#{$key}{
+        tr:nth-child(even) {
+            background-color: $value;
+        }
+    }
+}
