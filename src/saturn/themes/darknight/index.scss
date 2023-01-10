@@ -1,0 +1,34 @@
+// import variables
+@import './variables';
+
+// import colors components 
+@import '../../scss/colors';
+
+// import "size" components 
+@import '../../scss/sizes';
+
+// import transition components
+@import '../../scss/transition';
+
+// import mixins
+@import '../../scss/mixins';
+
+// import utilities 
+@import '../../scss/utilities';
+
+// import base scss and properties
+@import '../../scss/base';
+@import '../../scss/properties/flex_properties';
+@import '../../scss/properties/grid_properties';
+@import '../../scss/properties/align_properties';
+@import '../../scss/properties/justifying_properties';
+
+// import components 
+@import '../../components/scss/card';
+@import '../../components/scss/button';
+@import '../../components/scss/form';
+@import '../../components/scss/links';
+@import '../../components/scss/navbar';
+@import '../../components/scss/row';
+@import '../../components/scss/table';
+@import '../../components/scss/list';

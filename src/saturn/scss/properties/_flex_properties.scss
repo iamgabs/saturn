@@ -24,32 +24,31 @@
 
 .wrap {
     flex-wrap: wrap;
+
+    &-reverse {
+        flex-wrap: wrap-reverse;
+    }
+
+    &-inherit {
+        flex-wrap: inherit;
+    }
+
+    &-initial {
+        flex-wrap: initial;
+    }
+
+    &-unset {
+        flex-wrap: unset;
+    }
 }
 
-.nowrap {
-    flex-wrap: nowrap;
-}
 
-.wrap-reverse {
-    flex-wrap: wrap-reverse;
-}
+.flex-basis{
+    &-auto {
+        flex-basis: auto;
+    }
 
-.wrap-inherit {
-    flex-wrap: inherit;
-}
-
-.wrap-initial {
-    flex-wrap: initial;
-}
-
-.wrap-unset {
-    flex-wrap: unset;
-}
-
-.flex-basis-auto {
-    flex-basis: auto;
-}
-
-.flex-basis-content {
-    flex-basis: content;
+    &-content {
+        flex-basis: content;
+    }
 }
