@@ -10375,51 +10375,51 @@
   font-size: 2.5rem;
 }
 
-.dsp-n {
+.display-n {
   display: none;
 }
 
-.dsp-none {
+.display-none {
   display: none;
 }
 
-.dsp-b {
+.display-b {
   display: block;
 }
 
-.dsp-block {
+.display-block {
   display: block;
 }
 
-.dsp-f {
+.display-f {
   display: flex;
 }
 
-.dsp-flex {
+.display-flex {
   display: flex;
 }
 
-.dsp-i {
+.display-i {
   display: inline;
 }
 
-.dsp-inline {
+.display-inline {
   display: inline;
 }
 
-.dsp-ib {
+.display-ib {
   display: inline-block;
 }
 
-.dsp-inline-block {
+.display-inline-block {
   display: inline-block;
 }
 
-.dsp-g {
+.display-g {
   display: grid;
 }
 
-.dsp-grid {
+.display-grid {
   display: grid;
 }
 
@@ -10495,7 +10495,11 @@ body {
 
 i {
   font-size: 1.2rem;
-  color: #557bf8;
+  color: #1b1b1b;
+}
+
+.up-scale:hover {
+  scale: 1.1;
 }
 
 .flex-center, .f-center {

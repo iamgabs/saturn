@@ -1,5 +1,3 @@
-@use 'sass:math';
-
 $utilities: (
     "font-size": (
         "prefix": "font-size",
@@ -13,7 +11,7 @@ $utilities: (
         )
     ),
     "display": (
-        "prefix": "dsp",
+        "prefix": "display",
         "values": (
             "n": none,
             "none": none,

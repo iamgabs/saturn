@@ -1,4 +1,3 @@
-// colors 
 $colors: (
     "black": #1b1b1b,
     "soft-black": #222222,
@@ -28,7 +27,6 @@ $colors: (
     "transparent": #00000000,
 );
 
-// font size
 $font-xsm: 0.4rem;
 $font-sm: 0.8rem;
 $font-mid: 1.2rem;
@@ -36,7 +34,6 @@ $font-lg: 1.6rem;
 $font-xlg: 2.0rem;
 $font-xxlg: 2.5rem;
 $base-font-size: 1em; 
-
 
 $sizes: (
     "0": 0,
@@ -124,12 +121,9 @@ $sizes: (
     "100": 100rem
 );
 
-// spacing 
 $base-margin: 0.75rem;
 $base-padding: 0.75rem;
 
-
-// sizes by rem
 $size-xxsm: 1rem;
 $size-xsm: 3rem;
 $size-sm: 5rem;
@@ -138,10 +132,8 @@ $size-lg: 11rem;
 $size-xlg: 13rem;
 $size-xxlg: 15rem;
 
-// box shadow 
 $base-box-shadow: 1px 3px 5px #0000001a;
 
-// border 
 $base-border-radius: 20px;
 
 $seconds_variable: (
@@ -155,4 +147,16 @@ $seconds_variable: (
     "08": .8s,
     "09": .9s,
     "1": 1s,
+);
+
+$flex_variable: (
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5,
+    "6": 6,
+    "7": 7,
+    "8": 8,
+    "9": 9
 );
