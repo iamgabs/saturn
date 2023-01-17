@@ -1,23 +1,13 @@
-// import variables
 @import 'scss/variables';
-
-// import colors components 
 @import 'scss/colors';
-
-// import "size" components 
 @import 'scss/sizes';
-
-// import transition components
 @import 'scss/transition';
-
-// import mixins
 @import 'scss/mixins';
-
-// import utilities 
 @import 'scss/utilities';
 
 // import base scss and properties
 @import 'scss/base';
+@import 'scss/border';
 @import 'scss/properties/flex_properties';
 @import 'scss/properties/grid_properties';
 @import 'scss/properties/align_properties';

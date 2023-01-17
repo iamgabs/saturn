@@ -3,7 +3,6 @@ form, .form {
     height: auto;
     border: 1px solid map-get($colors, "silver");
     border-radius: 8px;
-    background-color: map-get($colors, "secondary-color");
     padding: 3rem;
     @include flex-column;
     gap: .5rem;
@@ -11,23 +10,17 @@ form, .form {
     .form-title {
         font-size: 2.5rem;
         font-weight: 500;
-        color: map-get($colors, "white");
     }
 
     & > label {
         align-self: flex-start;
         font-size: 1.1rem;
-        color: map-get($colors, "white");
     }
 
     & > input {
         padding: .2rem .8rem;
-        border: 2px solid  map-get($colors, "light-blue");
-        color:  map-get($colors, "light-blue");
         border-radius: 8px;
-        background-color:  map-get($colors, "white");
         font-size: $font-mid;
         outline: none;
-        accent-color: map-get($colors, "main-color");
     }
 }

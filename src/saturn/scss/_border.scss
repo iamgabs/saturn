@@ -1,0 +1,9 @@
+@each $pixel, $pixel_value in $px {
+    @each $border_name, $border_value in $border-style {
+        @each $color_name, $color_value in $colors {
+            .border-#{$pixel}-#{$border_name}-#{$color_name}{
+                border: $pixel_value $border_value $color_value;
+            }
+        }
+    }
+}

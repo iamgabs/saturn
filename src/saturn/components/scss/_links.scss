@@ -1,11 +1,6 @@
 .link, a {
     text-decoration: none;
-    color: map-get($colors, "light-blue");
     font-size: $font-sm;
-
-    &:hover {
-        border-bottom: 1px solid map-get($colors, "light-blue");
-    }
 }
 
 .link-2 {
