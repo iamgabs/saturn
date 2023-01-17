@@ -1,8 +1,8 @@
-.flex-center, .f-center {
+.flex-center, .f-center, .fc {
     @include flex-center;
 }
 
-.flex-align {
+.flex-align, .fa {
     @include flex-align;
 }
 
@@ -22,7 +22,7 @@
     @include flex-column-reverse;
 }
 
-.wrap {
+.wrap, .fw{
     flex-wrap: wrap;
 
     &-reverse {
@@ -43,12 +43,22 @@
 }
 
 
-.flex-basis{
+.flex-basis, .fb{
     &-auto {
         flex-basis: auto;
     }
 
     &-content {
         flex-basis: content;
+    }
+}
+
+@each $key, $value in $flex-grid {
+    .flex-#{$key}{
+        flex: $value;
+    }
+
+    .f-#{$key}{
+        flex: $value;
     }
 }

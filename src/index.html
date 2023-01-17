@@ -13,20 +13,27 @@
             <h1>Header</h1>
         </div>
         <div>
-            <ul class="ul">
-                <li>
-                    <a href="#">Link 1</a>
-                </li>
-                <li>
-                    <a href="#" class="link-2">Link 2</a>
-                </li>
-                <li>
-                    <a href="#">Link 3</a>
-                </li>
-                <li>
-                    <a href="#">Link 4</a>
-                </li>
-            </ul>
+            <div class="hamburguer-toggle">
+                <ul>
+                    <li>
+                        <a href="#">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-2">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="#">Link 4</a>
+                    </li>
+                </ul>
+                <div class="toggle">
+                    <div class="one bg-white"></div>
+                    <div class="two bg-white"></div>
+                    <div class="three bg-white"></div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -100,13 +107,14 @@
     <h2 class="pl-2">cards</h2>
     
     <div class="flex-row bg-light-blue-transparent pd-3 wrap">
-        <div class="card ml-1 wd-15 bg-white mb-05 up-scale transition-03-ease-in-out">
+        <div class="card ml-1 wd-15 bg-white mb-05 up-scale transition-03-ease-in">
             <div class="card-title">card title</div>
             <div class="card-body">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolorum, sequi deserunt consectetur nihil tempora? Recusandae eum vitae nemo assumenda!
                 <a href="#" class="link">clickable link</a>
             </div>
         </div>
+
         <div class="card-center ml-1 wd-15 bg-white mb-05">
             <div class="card-title">card title</div>
             <div class="card-body">
@@ -114,20 +122,23 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, odio cupiditate. Magnam nisi quo dolores.</p>
             </div>
         </div>
-        <div class="card-neumorphism ml-1 wd-15 mb-05">
+
+        <div class="card-neumorphism ml-1 wd-15 bg-white mb-05">
             <div class="card-title">card title</div>
             <div class="card-body">
                 <img src="./img/SaturnSS-noback.png" alt="img example" width="150px" height="150px">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, odio cupiditate. Magnam nisi quo dolores.</p>
             </div>
         </div>
-        <div class="card-neumorphism-center ml-1 wd-15 mb-05">
+
+        <div class="card-neumorphism-center ml-1 wd-15 bg-white mb-05">
             <div class="card-title">card title</div>
             <div class="card-body">
                 <img src="./img/SaturnSS-noback.png" alt="img example" width="150px" height="150px">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, odio cupiditate. Magnam nisi quo dolores.</p>
             </div>
         </div>
+
         <div class="card-glassmorphism bg-light-blue-transparent ml-1 wd-15 mb-05">
             <div class="card-title">card title</div>
             <div class="card-body">
@@ -183,15 +194,15 @@
             <input type="text">
             <label>Password: </label>
             <input type="password">
-            <div class="btn-rounded mt-1 bg-light-blue bg-hover-white text-hover-light-blue text-white transition-03-ease-in">Enviar</div>
+            <button class="btn-rounded mt-1 bg-light-blue bg-hover-white text-hover-light-blue text-white transition-03-ease-in">Enviar</button>
         </form>
     </div>
 
     <div class="flex-row wrap">
         <table class="table mr-1 mb-1">
             <thead>
-                <th>Nomes</th>
-                <th>Idades</th>
+                <th >Nomes</th>
+                <th >Idades</th>
             </thead>
             <tbody>
                 <tr>
@@ -213,7 +224,7 @@
                 <th>Nomes</th>
                 <th>Idades</th>
             </thead>
-            <tbody>
+            <tbody class="table-odd-color-light-blue">
                 <tr>
                     <td>João</td>
                     <td>22</td>

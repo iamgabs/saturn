@@ -1,0 +1,33 @@
+@media(max-width: 720px) {
+    .hamburguer-toggle {
+        & > ul {
+            display: none;
+        }    
+    }
+    .toggle {
+        @include toggle;
+    }
+
+    .toggle .one, .two, .three{
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    
+    .toggle.on {
+        .one {
+            transform: rotate(45deg) translate(9px, 7px);   
+        }
+
+        .two {
+            opacity: 0;
+        }
+
+        .three {
+            transform: rotate(-45deg) translate(8px, -7px);
+        }
+    }
+   
+}

@@ -1,4 +1,4 @@
-.align-items {
+.align-items, .ai {
     &-initial {
         align-items: initial;
     }
@@ -32,7 +32,7 @@
     }
 }
 
-.align-self {
+.align-self, .as {
     &-initial {
         align-self: initial;
     }
@@ -70,7 +70,7 @@
     }
 }
 
-.align-content {
+.align-content, .ac {
     &-initial {
         align-content: initial;
     }

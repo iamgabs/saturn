@@ -1,4 +1,4 @@
-.justify-content {
+.justify-content, .jc {
     &-center {
         justify-content: center;
     }
@@ -64,7 +64,7 @@
     }
 }
 
-.justify-self {
+.justify-self, .js{
     &-center {
         justify-self: center;
     }

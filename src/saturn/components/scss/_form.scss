@@ -3,7 +3,7 @@ form, .form {
     height: auto;
     border: 1px solid map-get($colors, "silver");
     border-radius: 8px;
-    background-color: map-get($colors, "soft-black");
+    background-color: map-get($colors, "secondary-color");
     padding: 3rem;
     @include flex-column;
     gap: .5rem;
@@ -28,7 +28,6 @@ form, .form {
         background-color:  map-get($colors, "white");
         font-size: $font-mid;
         outline: none;
-        accent-color: map-get($colors, "light-blue");
+        accent-color: map-get($colors, "main-color");
     }
-
 }

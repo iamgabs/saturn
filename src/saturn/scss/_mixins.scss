@@ -32,3 +32,19 @@
     @include flex-align;
     flex-direction: column-reverse;
 }
+
+@mixin grid {
+    display: grid;
+}
+
+@mixin grid-center {
+    @include grid;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin toggle {
+    width: 40px;
+    height: 30px;
+    margin-right: 10px;
+}

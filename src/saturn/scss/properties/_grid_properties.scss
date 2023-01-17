@@ -1,0 +1,163 @@
+.grid, .g {
+    @include grid;
+}
+
+.grid-center, .gc {
+    @include grid-center;
+}
+
+.grid-template-rows, .gtr {
+    &-auto {
+        grid-template-rows: auto;
+    }
+
+    &-max-content {
+        grid-template-rows: max-content;
+    }
+
+    &-min-content {
+        grid-template-rows: min-content;
+    }
+
+    &-none {
+        grid-template-rows: none;
+    }
+
+    &-subgrid {
+        grid-template-rows: subgrid;
+    }
+
+    &-repeat {
+        @each $key, $value in $flex-grid {
+           &-#{$key}{
+            grid-template-rows: repeat($value);
+           } 
+        }
+    }
+}
+
+.grid-template-columns, .gtc {
+    &-auto {
+        grid-template-columns: auto;
+    }
+
+    &-max-content {
+        grid-template-columns: max-content;
+    }
+
+    &-min-content {
+        grid-template-columns: min-content;
+    }
+
+    &-none {
+        grid-template-columns: none;
+    }
+
+    &-subgrid {
+        grid-template-columns: subgrid;
+    }
+
+    &-repeat {
+        @each $key, $value in $flex-grid {
+           &-#{$key}{
+            grid-template-columns: repeat($value);
+           } 
+        }
+    }
+}
+
+.grid-column, .gc {
+    &-auto {
+        grid-column: auto;
+    }
+
+    &-span {
+        grid-column: span;
+    }
+
+    &-inherit {
+        grid-column: inherit;
+    }
+
+    &-initial {
+        grid-column: initial;
+    }
+
+    &-unset {
+        grid-column: unset;
+    }
+}
+
+.grid-row, .gr {
+    &-auto {
+        grid-row: auto;
+    }
+
+    &-span {
+        grid-row: span;
+    }
+
+    &-inherit {
+        grid-row: inherit;
+    }
+
+    &-initial {
+        grid-row: initial;
+    }
+
+    &-unset {
+        grid-row: unset;
+    }
+}
+
+.grid-template {
+    &-auto {
+        grid-template: auto;
+    }
+
+    &-max-content {
+        grid-template: max-content;
+    }
+
+    &-min-content {
+        grid-template: min-content;
+    }
+
+    &-none {
+        grid-template: none;
+    }
+
+    &-subgrid {
+        grid-template: subgrid;
+    }
+
+    &-repeat {
+        @each $key, $value in $flex-grid {
+           &-#{$key}{
+            grid-template: repeat($value);
+           } 
+        }
+    }
+}
+
+.grid-area, .ga {
+    &-auto {
+        grid-area: auto;
+    }
+
+    &-span {
+        grid-area: span;
+    }
+
+    &-inherit {
+        grid-area: inherit;
+    }
+
+    &-initial {
+        grid-area: initial;
+    }
+
+    &-unset {
+        grid-area: unset;
+    }
+}

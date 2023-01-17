@@ -5,10 +5,10 @@ function buildSaturnSSStylesAndThemes() {;
     return src('src/saturn/**/*.scss')
         .pipe(sass()) 
         .pipe(dest('src/css'))
-        && 
-        src('src/saturn/themes/**/*.scss')
-        .pipe(sass()) 
-        .pipe(dest('src/css/themes/'));
+        // && 
+        // src('src/saturn/themes/**/*.scss')
+        // .pipe(sass()) 
+        // .pipe(dest('src/css/themes/'));
 }
 
 function watchAllScssFilesInTheRepository() {
