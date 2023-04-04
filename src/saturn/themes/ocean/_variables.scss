@@ -1,4 +1,3 @@
-// colors 
 $colors: (
     "main-color":#557bf8,
     "secondary-color": #2b2b2b,
@@ -30,7 +29,6 @@ $colors: (
     "transparent": #00000000,
 );
 
-// font size
 $font-xsm: 0.4rem;
 $font-sm: 0.8rem;
 $font-mid: 1.2rem;
@@ -39,99 +37,15 @@ $font-xlg: 2.0rem;
 $font-xxlg: 2.5rem;
 $base-font-size: 1em; 
 
+$sizes_increment: .1rem;
+$sizes: ();
+@for $i from 0 to 100 {
+    $sizes: map-merge($sizes, ($i: $sizes_increment * $i))
+}
 
-$sizes: (
-    "0": 0,
-    "01": .1rem,
-    "02": .2rem,
-    "03": .3rem,
-    "04": .4rem,
-    "05": .5rem,
-    "06": .6rem,
-    "07": .7rem,
-    "08": .8rem,
-    "09": .9rem,
-    "1": 1rem,
-    "2": 2rem,
-    "3": 3rem,
-    "4": 4rem,
-    "5": 5rem,
-    "6": 6rem,
-    "7": 7rem,
-    "8": 8rem,
-    "9": 9rem,
-    "10": 10rem,
-    "11": 11rem,
-    "12": 12rem,
-    "13": 13rem,
-    "14": 14rem,
-    "15": 15rem,
-    "16": 16rem,
-    "17": 17rem,
-    "18": 18rem,
-    "19": 19rem,
-    "20": 20rem,
-    "21": 21rem,
-    "22": 22rem,
-    "23": 23rem,
-    "24": 24rem,
-    "25": 25rem,
-    "26": 26rem,
-    "27": 27rem,
-    "28": 28rem,
-    "29": 29rem,
-    "30": 30rem,
-    "31": 31rem,
-    "32": 32rem,
-    "33": 33rem,
-    "34": 34rem,
-    "35": 35rem,
-    "36": 36rem,
-    "37": 37rem,
-    "38": 38rem,
-    "39": 39rem,
-    "40": 40rem,
-    "41": 41rem,
-    "42": 42rem,
-    "43": 43rem,
-    "44": 44rem,
-    "45": 45rem,
-    "46": 46rem,
-    "47": 47rem,
-    "48": 48rem,
-    "49": 49rem,
-    "50": 50rem,
-    "51": 51rem,
-    "52": 52rem,
-    "53": 53rem,
-    "54": 54rem,
-    "55": 55rem,
-    "56": 56rem,
-    "57": 57rem,
-    "58": 58rem,
-    "59": 59rem,
-    "60": 50rem,
-    "61": 61rem,
-    "62": 62rem,
-    "63": 63rem,
-    "64": 64rem,
-    "65": 65rem,
-    "66": 66rem,
-    "67": 67rem,
-    "68": 68rem,
-    "69": 69rem,
-    "70": 70rem,
-    "80": 80rem,
-    "90": 90rem,
-    "100": 100rem
-);
-
-// spacing 
 $base-margin: 0.75rem;
 $base-padding: 0.75rem;
 
-
-// sizes by rem
 $size-xxsm: 1rem;
 $size-xsm: 3rem;
 $size-sm: 5rem;
@@ -140,10 +54,8 @@ $size-lg: 11rem;
 $size-xlg: 13rem;
 $size-xxlg: 15rem;
 
-// box shadow 
 $base-box-shadow: 1px 3px 5px #0000001a;
 
-// border 
 $base-border-radius: 20px;
 
 $seconds_variable: (
@@ -171,17 +83,11 @@ $flex-grid: (
     "9": 9
 );
 
-$px: (
-    "1": 1px,
-    "2": 2px,
-    "3": 3px,
-    "4": 4px,
-    "5": 5px,
-    "6": 6px,
-    "7": 7px,
-    "8": 8px,
-    "9": 9px
-);
+$px_increment: 1px;
+$px: ();
+@for $i from 0 to 99 {
+    $px: map-merge($px, ($i: $px_increment * $i))
+}
 
 $border-style: (
     "dashed": dashed,

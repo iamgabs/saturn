@@ -1,13 +1,37 @@
 @each $key, $value in $seconds_variable {
-    .transition-#{$key}-ease{
+    .transition-#{$key}-ease {
         transition: $value ease;
     }
 
-    .transition-#{$key}-ease-in{
+    .transition-#{$key}-ease-in {
         transition: $value ease-in;
     }
 
-    .transition-#{$key}-ease-in-out{
+    .transition-#{$key}-ease-in-out {
         transition: $value ease-in-out;
+    }
+
+    .transition-#{$key}-ease-out {
+        transition: $value ease-out;
+    }
+
+    .transition-#{$key}-inherit {
+        transition: $value inherit;
+    }
+
+    .transition-#{$key}-initial {
+        transition: $value initial;
+    }
+
+    .transition-#{$key}-unset {
+        transition: $value unset;
+    }
+
+    .transition-#{$key}-all {
+        transition: $value all;
+    }
+
+    .transition-#{$key}-none {
+        transition: none;
     }
 }
