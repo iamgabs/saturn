@@ -1,38 +1,32 @@
-// const { dest, series, src, watch } = require('gulp');
-// const sass = require('gulp-sass')(require('sass'));
-
-// function buildSaturnSSStylesAndThemes() {;
-//     return src('src/saturn/**/*.scss')
-//         .pipe(sass()) 
-//         .pipe(dest('src/css'))
-//         // && 
-//         // src('src/saturn/themes/**/*.scss')
-//         // .pipe(sass()) 
-//         // .pipe(dest('src/css/themes/'));
-// }
-
-// function watchAllScssFilesInTheRepository() {
-//     watch(['src/saturn/**/*.scss'], buildSaturnSSStylesAndThemes);
-// }
-
-// exports.default = series(buildSaturnSSStylesAndThemes, watchAllScssFilesInTheRepository)
-
+// import lib
 const { dest, series, src, watch, parallel } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+const cssNanoMinifier = require('gulp-cssnano')
+
+// set destination folder
+const destinationFolder = 'src/css';
 
 function buildSaturnSSStyles() {
+    /* Build SaturnSS Styles function should pick all files into
+    saturn's folder, and compile to a css file in the destination folder */
     return src('src/saturn/**/*.scss')
         .pipe(sass()) 
-        .pipe(dest('src/css'));
+        .pipe(cssNanoMinifier())
+        .pipe(dest(destinationFolder));
 }
 
 function buildSaturnThemesStyles() {
+    /* Build SaturnSS Themes Styles function should pick all files into
+    saturn's folder, and compile to a css file in the destination folder */
     return src('src/saturn/themes/**/*.scss')
         .pipe(sass()) 
-        .pipe(dest('src/css/themes/'));
+        .pipe(cssNanoMinifier())
+        .pipe(dest(`${destinationFolder}/themes`));
 }
 
+// RUN TIME 
 function watchAllScssFiles() {
+    // function to watch all scss files 
     watch(['src/saturn/**/*.scss'], buildSaturnSSStyles);
 }
 
