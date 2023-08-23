@@ -1,4 +1,20 @@
+/**
+    @author Gabriel Carvalho 'iamgabs'
+    The Utilities file contains some utility values about CSS. 
+    It is organized as a dictionary. 
+    The variable '$utilities' holds the prefix for the key "x" 
+    and the values array for different values. 
+    The combination of these keys and values, allows for the creation 
+    of different sizes and properties for each key. 
+*/
+
 $utilities: (
+   /**
+    The key "font size" has the prefix defined as "font-size"
+    and includes the following values: xsm, sm, mid, lg, xlg, xxlg. 
+    To use it, we can combine the key and value separated by a
+    dash (-), such as 'font-size-xsm'.
+    */
     "font-size": (
         "prefix": "font-size",
         "values": (
@@ -10,6 +26,13 @@ $utilities: (
             "xxlg": $font-xxlg
         )
     ),
+    /**
+    The key "display" has the prefix defined as "display"
+    and includes the following values: n, none, b, block, f, flex,
+    i, inline, ib, inline-block, g, grid;
+    To use it, we can combine the key and value separated by a
+    dash (-), such as 'display-f'.
+    */
     "display": (
         "prefix": "display",
         "values": (
@@ -27,6 +50,13 @@ $utilities: (
             "grid": grid
         )
     ),
+    /**
+    The key "width" has the prefix defined as "witdh"
+    and includes the following values: xxsm, xsm, sm, mid, lg,
+    xlg, xxlg, 100vw. 
+    To use it, we can combine the key and value separated by a
+    dash (-), such as 'width-lg'.
+    */
     "width": (
         "prefix": "width", 
         "values": (
@@ -37,9 +67,16 @@ $utilities: (
             "lg": $size-lg,
             "xlg": $size-xlg,
             "xxlg": $size-xxlg,
-            "100pc": 100vw
+            "100vw": 100vw
         )
     ),
+    /**
+    The key "height" has the prefix defined as "height"
+    and includes the following values: xxsm, xsm, sm, mid, lg,
+    xlg, xxlg, 100vh. 
+    To use it, we can combine the key and value separated by a
+    dash (-), such as 'height-lg'.
+    */
     "height": (
         "prefix": "height",
         "values": (
@@ -49,18 +86,24 @@ $utilities: (
             "mid": $size-mid,
             "lg": $size-lg,
             "xlg": $size-xlg,
-            "xxlg": $size-xxlg
+            "xxlg": $size-xxlg,
+            "100vh": 100vh
         )
     )
 );
 
-// generate classes 
+// loop to generate all classes for '$utilities' variable
 @each $property, $map in $utilities {
     $prefix: map-get($map , "prefix");
     $values: map-get($map , "values");
 
+    /**
+    for each key and value in $values
+    should generate a class '.key-value'
+    */
     @each $key, $value in $values {
         @if($key == "default") {
+            // checks default key
             .#{$prefix} {
                 #{$property}: $value;
             }
@@ -71,3 +114,4 @@ $utilities: (
         }
     }
 }
+

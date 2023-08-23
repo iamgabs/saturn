@@ -1,0 +1,29 @@
+.overflow, .of, .overflow-x, .of-x, .overflow-y, .of-y {
+    &-auto {
+        overflow: auto;
+    }
+
+    &-hidden {
+        overflow: hidden;
+    }
+
+    &-visible {
+        overflow: visible;
+    }
+
+    &-scroll {
+        overflow: scroll;
+    }
+
+    &-initial {
+        overflow: initial;
+    }
+
+    &-inherit {
+        overflow: inherit;
+    }
+
+    &-unset {
+        overflow: unset;
+    }
+}

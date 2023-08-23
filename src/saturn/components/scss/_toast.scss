@@ -1,0 +1,21 @@
+.toast {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: $base-margin;
+    border: none;
+    border-radius: 12px; 
+    padding: 10px;
+}
+
+.toast-title {
+    font-size: $font-lg;
+    font-weight: bold;
+}
+
+
+.toast-body {
+    font-size: $font-mid;
+}

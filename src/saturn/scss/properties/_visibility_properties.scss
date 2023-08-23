@@ -1,0 +1,37 @@
+/**
+*   @author Gabriel Carvalho "iamgabs" 
+*   visibility files has all values for 
+*   visibilities classes
+*/
+
+$visibilities_values: (
+    "hidden": hidden,
+    "visible": visible, 
+    "collapse": collapse, 
+    "inherit": inherit, 
+    "initial": initial, 
+    "unset": unset
+);
+
+@each $key, $value in $visibilities_values {
+    .visibility-#{$key} {
+        visibility: $value;
+    }
+
+    .v-#{$key} {
+        visibility: $value;
+    }
+}
+
+// Define boolean values for hidden and visible
+
+// CASE: TRUE (VISIBLE)
+.visibility-1, .v-1 {
+    visibility: visible;
+}
+
+// CASE: FALSE (HIDDEN)
+
+.visibility-0, .v-0 {
+    visibility: hidden;
+}

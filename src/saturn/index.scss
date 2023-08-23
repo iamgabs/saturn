@@ -1,3 +1,19 @@
+/**
+    @author Gabriel Carvalho 'iamgabs'
+    The index file is where the entire library is built. 
+    It imports all components, properties, and SCSS properties 
+    into a single file called 'index.scss', which is then compiled 
+    into the main file 'index.css'. This 'index.css' file contains 
+    the entire library. However, it is not always necessary or useful 
+    import all the data that will not be used in a project. 
+    To avoid unnecessary classes in the project, the 'index.css' file 
+    should not be imported unless developers intend to use a large number 
+    of different components, properties, or the entire library. 
+    If the size of the library import matters for your project, 
+    it is strongly recommended to import files according to your specific needs. 
+    For example, you can import only the button file or the flex file as required.
+*/
+
 @import 'scss/variables';
 @import 'scss/colors';
 @import 'scss/sizes';
@@ -12,6 +28,9 @@
 @import 'scss/properties/grid_properties';
 @import 'scss/properties/align_properties';
 @import 'scss/properties/justifying_properties';
+@import 'scss/properties/text_properties';
+@import 'scss/properties/overflow_properties';
+@import 'scss/properties/visibility_properties';
 
 // import components 
 @import 'components/scss/card';
@@ -22,4 +41,5 @@
 @import 'components/scss/row';
 @import 'components/scss/table';
 @import 'components/scss/list';
-@import 'components/scss/hamburguer_toggle'
+@import 'components/scss/hamburguer_toggle';
+@import 'components/scss/toast';
